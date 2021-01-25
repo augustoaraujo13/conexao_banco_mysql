@@ -8,7 +8,7 @@ public class ConexaoBanco {
 
     private Connection conn = null;
 
-    public DBteste() {
+    public ConexaoBanco() {
     }
 
     public static Connection abrirBanco() {
