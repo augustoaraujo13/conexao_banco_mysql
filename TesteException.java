@@ -1,4 +1,4 @@
-package testejdbc;
+package BancoDeDados;
 
 public class TesteException extends RuntimeException {
 
