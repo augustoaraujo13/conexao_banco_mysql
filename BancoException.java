@@ -1,4 +1,4 @@
-package BancoDeDados;
+package bancodedados;
 
 public class BancoException extends RuntimeException {
 
