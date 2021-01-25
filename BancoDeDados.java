@@ -1,6 +1,6 @@
-package BancoDeDados;
+package bancodedados;
 
-public class TesteJdbc {
+public class BancoDeDados {
 
     public static void main(String[] args) {
        
