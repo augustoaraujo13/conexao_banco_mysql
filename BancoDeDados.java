@@ -1,4 +1,4 @@
-package testejdbc;
+package BancoDeDados;
 
 public class TesteJdbc {
 
@@ -9,10 +9,10 @@ public class TesteJdbc {
         
         */
         
-         DBteste c = new DBteste();
+         Conexao c = new Conexao();
         
-        c.getConnection();
-        c.fecharConexao();
+        c.abrirBanco();
+        c.fecharBanco();
     }
     
 }
