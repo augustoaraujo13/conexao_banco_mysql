@@ -1,4 +1,4 @@
-package BancoDeDados;
+package bancodedados;
 
 import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
