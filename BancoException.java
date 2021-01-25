@@ -1,6 +1,6 @@
 package BancoDeDados;
 
-public class TesteException extends RuntimeException {
+public class BancoException extends RuntimeException {
 
     /*
     ClASSE PARA TRABALHAR EXCESSÕES TRY E CATCH
