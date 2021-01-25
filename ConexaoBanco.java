@@ -25,7 +25,7 @@ public class ConexaoBanco {
                 Exemplo de SENHA: 12345
                 */
             } catch (SQLException e) {
-                throw new TesteException(e.getMessage());
+                throw new BancoException(e.getMessage());
             }
         }
         return conn;
@@ -37,7 +37,7 @@ public class ConexaoBanco {
             try {
                 conn.close();
             } catch (SQLException e) {
-                throw new TesteException(e.getMessage());
+                throw new BancoException(e.getMessage());
             }
 
         }
