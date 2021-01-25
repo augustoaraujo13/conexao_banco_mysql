@@ -4,20 +4,20 @@ import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DBteste {
+public class ConexaoBanco {
 
     private Connection conn = null;
 
     public DBteste() {
     }
 
-    public Connection getConnection() {
+    public static Connection abrirBanco() {
 
         if (conn == null) {
 
             try {
 
-                return conn = (Connection) DriverManager.getConnection("URL","USUARIO", "SENHA");
+                conn = (Connection) DriverManager.getConnection("URL","USUARIO", "SENHA");
                 
                 /*
                 Exemplo de URL : jdbc:mysql://Endereço_do_banco/nome_do_banco
@@ -31,7 +31,7 @@ public class DBteste {
         return conn;
     }
 
-    public Connection fecharConexao() {
+    public static Connection fecharBanco() {
 
         if (conn != null) {
             try {
